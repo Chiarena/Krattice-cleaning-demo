@@ -39,19 +39,19 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="max-w-4xl mx-auto px-8 py-20">
+    <section id="services" className="max-w-4xl mx-auto px-4 sm:px-8 py-12 sm:py-20">
 
       <p className="text-teal-600 text-xs font-semibold uppercase tracking-widest mb-3">
         What We Offer
       </p>
-      <h2 className="text-3xl font-bold text-gray-900 mb-3">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
         Services for Every Need
       </h2>
-      <p className="text-gray-500 font-light mb-12">
+      <p className="text-gray-500 font-light mb-8 sm:mb-12">
         From regular home cleaning to specialist commercial contracts — we've got you covered.
       </p>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map(({ icon, title, description, features }) => (
           <div
             key={title}

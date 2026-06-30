@@ -20,16 +20,16 @@ export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false)
 
   return (
-    <section id="quote" className="bg-gray-50 py-20">
-      <div className="max-w-4xl mx-auto px-8">
-        <div className="grid grid-cols-2 gap-16 items-start">
+    <section id="quote" className="bg-gray-50 py-12 sm:py-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* Left side */}
           <div>
             <p className="text-teal-600 text-xs font-semibold uppercase tracking-widest mb-3">
               Get A Quote
             </p>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Book Your Cleaning Service Today
             </h2>
             <p className="text-gray-500 font-light text-sm mb-8">
@@ -53,7 +53,7 @@ export default function QuoteForm() {
           </div>
 
           {/* Right side — form */}
-          <div className="bg-white border border-gray-200 rounded-xl p-7">
+          <div className="bg-white border border-gray-200 rounded-xl p-5 sm:p-7">
             {submitted ? (
               <div className="text-center py-8">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
@@ -68,7 +68,7 @@ export default function QuoteForm() {
             ) : (
               <div className="space-y-4">
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1.5">
                       Your Name
@@ -102,7 +102,7 @@ export default function QuoteForm() {
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1.5">
                       Service Type

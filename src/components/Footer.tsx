@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 py-8 px-8">
-      <div className="max-w-4xl mx-auto flex items-center justify-between">
+    <footer className="border-t border-gray-200 py-8 px-4 sm:px-8">
+      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
 
         <span className="text-teal-600 text-lg font-bold tracking-tight">
           CleanCo
